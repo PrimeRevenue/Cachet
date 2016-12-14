@@ -14,31 +14,25 @@ class AlterTableJobsDropReservedColumn extends Migration
      *
      * @return void
      */
-public function up()
-{
-    Schema::table('jobs', function (Blueprint $table) {
-        
-        $table->dropColumn('reserved');
-
-    });
-    
-       Schema::table('failed_jobs', function (Blueprint $table) {
- +        $table->longText('exception')->after('payload');
- +    });
-
-}
-
-public function down()
-{
-    Schema::table('jobs', function (Blueprint $table) {
-        $table->tinyInteger('reserved')->unsigned();
-
-       
+    public function up()
+    {
+        Schema::table('jobs', function (Blueprint $table) {
+            $table->dropColumn('reserved');
     });
 
-    Schema::table('failed_jobs', function (Blueprint $table) {
- +        $table->dropColumn('exception');
- +    });
- 
-}
+        Schema::table('failed_jobs', function (Blueprint $table) {
+            $table->longText('exception')->after('payload');
+        });
+    }
+
+    public function down()
+    {
+        Schema::table('jobs', function (Blueprint $table) {
+            $table->tinyInteger('reserved')->unsigned();
+        });
+
+        Schema::table('failed_jobs', function (Blueprint $table) {
+            $table->dropColumn('exception');
+        });
+    } 
 }
