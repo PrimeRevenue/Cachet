@@ -45,5 +45,10 @@ return [
     'sparkpost' => [
         'secret' => env('MAIL_PASSWORD'),
     ],
+    
+    'sendgrid' => [
+        'api_key' => env('SENDGRID_API_KEY'),
+        'version' => 'v3',
+    ],
 
 ];
