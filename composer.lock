@@ -3094,16 +3094,7 @@
             "version": "1.1.3",
             "source": {
                 "type": "git",
---
-            "version": "1.1.3",
-            "source": {
-                "type": "git",
                 "url": "https://github.com/s-ichikawa/laravel-sendgrid-driver.git",
-                "reference": "fd37d69dff7f3de584eef5d7ceeb1b05cdcb657d"
-            },
-            "dist": {
-                "type": "zip",
---
                 "reference": "fd37d69dff7f3de584eef5d7ceeb1b05cdcb657d"
             },
             "dist": {
