@@ -197,7 +197,7 @@ class SetupController extends Controller
         });
 
         $v->sometimes(['env.mail_address', 'env.mail_username', 'env.mail_password'], 'required', function ($input) {
-            return $input->env['mail_driver'] !== 'log';
+            return $input->env['mail_driver'] !== 'log' || env['mail_driver'] !== 'sendgrid';
         });
 
         if ($v->passes()) {
