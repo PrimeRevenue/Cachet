@@ -61,6 +61,7 @@ class SetupController extends Controller
         // 'ses'       => 'Amazon SES', this will be available only if aws/aws-sdk-php is installed
         'sparkpost' => 'SparkPost',
         'log'       => 'Log (Testing)',
+        'sendgrid'  => 'SendGrid',
     ];
 
     /**
