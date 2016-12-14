@@ -21,6 +21,10 @@ public function up()
         $table->dropColumn('reserved');
 
     });
+    
+       Schema::table('failed_jobs', function (Blueprint $table) {
+ +        $table->longText('exception')->after('payload');
+ +    });
 
 }
 
@@ -32,6 +36,9 @@ public function down()
        
     });
 
+    Schema::table('failed_jobs', function (Blueprint $table) {
+ +        $table->dropColumn('exception');
+ +    });
  
 }
 }
