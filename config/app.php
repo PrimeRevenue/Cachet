@@ -176,7 +176,7 @@ return [
         'PragmaRX\Google2FA\Vendor\Laravel\ServiceProvider',
         'Roumen\Feed\FeedServiceProvider',
         'TwigBridge\ServiceProvider',
-
+        Sichikawa\LaravelSendgridDriver\SendgridTransportServiceProvider::class, 
         /*
          * Application Service Providers...
          */

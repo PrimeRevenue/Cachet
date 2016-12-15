@@ -21,7 +21,7 @@ return [
     | your application here. By default, Laravel is setup for SMTP mail.
     |
     | Supported: "smtp", "mail", "sendmail", "mailgun", "mandrill",
-    |            "ses", "sparkpost", "log"
+    |            "ses", "sparkpost", "log", "sendgrid"
     |
     */
 

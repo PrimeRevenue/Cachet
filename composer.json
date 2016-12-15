@@ -42,7 +42,8 @@
         "mccool/laravel-auto-presenter": "^4.3",
         "pragmarx/google2fa": "^0.7.1",
         "rcrowe/twigbridge": "^0.9.2",
-        "roumen/feed": "^2.10.4"
+        "roumen/feed": "^2.10.4",
+        "s-ichikawa/laravel-sendgrid-driver": "^1.1"
     },
     "require-dev": {
         "alt-three/testbench": "^1.7",
