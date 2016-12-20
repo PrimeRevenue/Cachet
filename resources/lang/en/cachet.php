@@ -15,7 +15,7 @@ return [
         'last_updated' => 'Last updated :timestamp',
         'status'       => [
             1 => 'Operational',
-            2 => 'Performance Issues',
+            2 => 'Maintenance',
             3 => 'Partial Outage',
             4 => 'Major Outage',
         ],
@@ -37,7 +37,7 @@ return [
             1 => 'Investigating',
             2 => 'Identified',
             3 => 'Watching',
-            4 => 'Fixed',
+            4 => 'Resolved',
         ],
     ],
 
